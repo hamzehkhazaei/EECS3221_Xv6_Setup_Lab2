@@ -41,3 +41,5 @@ $
 Try the `ls` command to see what programs are available in your Xv6 OS.
 To terminate Xv6 and exit the emulator, press `Ctrl+a`, release, and then press `x`.
 You are now finished with the Xv6 setup and may go ahead with your project.
+
+*Instructor: Hamzeh Khazaei*
