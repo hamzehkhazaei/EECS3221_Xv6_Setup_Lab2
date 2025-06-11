@@ -1,7 +1,7 @@
 # EECS 3221: Tutorial 1: Setting up Xv6
 
 ## 🧠 What is Xv6?
-[Xv6](https://pdos.csail.mit.edu/6.828/2019/xv6.html) is a modern re-implementation of **Unix Version 6 (V6)**, developed by **MIT** for educational purposes. It provides a compact and clean operating system that runs on **x86 and RISC-V** architectures and is written entirely in **ANSI C** with a small amount of assembly. Xv6 is designed not for production use, but to help students understand the **core concepts** of operating systems by studying and modifying real, working code. Its simplicity and well-structured codebase make it an ideal platform for learning how modern OS components are built and how they interact.
+[Xv6](https://pdos.csail.mit.edu/6.828/2019/xv6.html) is a modern re-implementation of Dennis Ritchie's and Ken Thompson's **Unix Version 6 (V6)**, developed by **MIT** for educational purposes. It provides a compact and clean operating system that runs on **x86 and RISC-V** architectures and is written entirely in **ANSI C** with a small amount of assembly. Xv6 is designed not for production use, but to help students understand the **core concepts** of operating systems by studying and modifying real, working code. Its simplicity and well-structured codebase make it an ideal platform for learning how modern OS components are built and how they interact.
 
 
 ## 💡 Why Xv6?
