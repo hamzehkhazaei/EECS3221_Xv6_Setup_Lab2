@@ -1,4 +1,4 @@
-# Tutorial 1: Setting up Xv6
+# Setting up Xv6 Operating System
 
 ## 🧠 What is Xv6?
 [Xv6](https://pdos.csail.mit.edu/6.828/2019/xv6.html) is MIT's modern re-implementation of Dennis Ritchie's and Ken Thompson's **Unix Version 6 (V6)** released by Bell Labs in 1975, for educational purposes. It provides a compact and clean operating system that runs on both **x86 and RISC-V** architectures and is written entirely in **ANSI C**, with a small amount of assembly code. As MIT has stopped supporting the x86 architecture, in this course we will adopt the **xv6-riscv** version. Xv6 is designed not for production use, but to help students understand the **core concepts** of operating systems by studying and modifying real, working code. Its simplicity and well-structured codebase make it an ideal platform for learning how modern OS components are built and how they interact.
@@ -17,11 +17,11 @@ By doing your projects on Xv6, you will:
 - Be better prepared for working with or designing real operating systems.
 
 ## 🚀 Compiling and Running Xv6
-Xv6 is a real operating system kernel, so it requires real hardware to boot. Fortunately, today we can emulate hardware in software. Programs like [QEMU](https://www.qemu.org/) can emulate the functionality of a real physical CPU in software. i.e., QEMU implements the standard CPU loop: it fetches an instruction pointed to by the instruction pointer register (EIP), decodes it, performs all permission and condition checks, computes the outcome, increments EIP, and continues to the next instruction. In a nutshell, QEMU (Quick EMUlator) is a generic and open-source machine emulator and virtualizer. It can emulate hardware to run operating systems or programs for one architecture on a different architecture, or it can use hardware acceleration to virtualize efficiently. In this course, we will use QEMU as an emulator and not a hypervisor. 
+Xv6 is a real operating system kernel, so it requires real hardware to boot. Fortunately, today we can emulate hardware in software. Programs like [QEMU](https://www.qemu.org) can emulate the functionality of a real physical CPU in software. i.e., QEMU implements the standard CPU loop: it fetches an instruction pointed to by the instruction pointer register (EIP), decodes it, performs all permission and condition checks, computes the outcome, increments EIP, and continues to the next instruction. In a nutshell, QEMU (Quick EMUlator) is a generic and open-source machine emulator and virtualizer. It can emulate hardware to run operating systems or programs for one architecture on a different architecture, or it can use hardware acceleration to virtualize efficiently. In this course, we will use QEMU as an emulator and not a hypervisor. 
 
 Like a real PC platform, QEMU emulates the hardware boot protocol. QEMU starts by loading the disk sector at number 0 into memory location 0x7c00 and then jumping to it. Xv6 takes it from there. At a high level, for Xv6, it does not matter if it runs on the real hardware or under QEMU. Of course, emulation is slower than real hardware. Still, aside from that, as long as QEMU implements the CPU's logic correctly, we do not observe any deviations from real bare-metal execution. Surprisingly, QEMU is reasonably fast, so you, as a human, barely notice the difference.
 
-Thanks to Jason Keltz (our EECS Computer Development Manager), all EECS servers are now running QEMU. So now you only need to log in to your account on any EECS server and run the following to compile and boot up Xv6:
+Thanks to Jason Keltz (our EECS Computer Development Manager), all EECS servers are now running [QEMU](https://www.qemu.org) and toolchains for [RISC-V](https://en.wikipedia.org/wiki/RISC-V). So now you only need to log in to your account on any EECS server and run the following to compile and boot up Xv6:
 ```
 $ git clone https://github.com/mit-pdos/xv6-riscv.git
 $ cd xv6-riscv
