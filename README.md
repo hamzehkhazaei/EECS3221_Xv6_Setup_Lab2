@@ -38,6 +38,7 @@ hart 2 starting
 init: starting sh
 $
 ```
+Use the `ls` command to see the user programs on `xv6`. Try to run at least one of them. 
 To terminate Xv6 and exit the emulator, press `Ctrl+a`, release, and then press `x`.
 You are now finished with the Xv6 setup and may go ahead with your project.
 
