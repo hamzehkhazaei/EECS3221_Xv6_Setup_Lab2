@@ -23,7 +23,7 @@ Like a real PC platform, QEMU emulates the hardware boot protocol. QEMU starts b
 
 Thanks to Jason Keltz (our EECS Computer Development Manager), all EECS servers are now running [QEMU](https://www.qemu.org) and toolchains for [RISC-V](https://en.wikipedia.org/wiki/RISC-V). So now you only need to log in to your account on any EECS server and run the following to compile and boot up Xv6:
 ```
-$ git clone https://github.com/mit-pdos/xv6-riscv.git
+$ git clone https://github.com/hamzehkhazaei/xv6-riscv
 $ cd xv6-riscv
 $ make qemu
 ```
